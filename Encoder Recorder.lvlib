@@ -4,6 +4,10 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
-	<Item Name="tank drive execute.vi" Type="VI" URL="../Edcoder Recorder/tank drive execute.vi"/>
-	<Item Name="tank drive recorder.vi" Type="VI" URL="../Edcoder Recorder/tank drive recorder.vi"/>
+	<Item Name="execute" Type="Folder">
+		<Item Name="tank drive execute.vi" Type="VI" URL="../Edcoder Recorder/tank drive execute.vi"/>
+	</Item>
+	<Item Name="record" Type="Folder">
+		<Item Name="tank drive recorder.vi" Type="VI" URL="../Edcoder Recorder/tank drive recorder.vi"/>
+	</Item>
 </Library>
