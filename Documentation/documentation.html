@@ -24,7 +24,9 @@
     <h2>Table of Contents</h2>
     <ul>
         <li><a href="#tankdriverec">tank drive record.vi</a></li>
-        <li><a href="#tankdriveexec">tank drive execute</a></li>
+        <li><a href="#tankdriveexec">tank drive execute.vi</a></li>
+        <li><a href="#motorencoderrecord">motor encoder record.vi</a></li>
+        <li><a href="#motorencoderexecute">motor encoder execute.vi</a></li>
     </ul>
     <p>note: all users have the right to decompile, modify and redistribute the source code of this library.</p>
     <br>
@@ -85,6 +87,51 @@
         <p>motorController: indicates which type of motor controller is being used</p>
         <p>desiredDistanceLeft: the desired encoder distance of the left motor</p>
         <p>desiredDistanceRight: the desired encoder distance of the right motor</p>
+        <br>
+        <br>
+        <h2>Returns</h2>
+        <p>returns nothing</p>
+    </div>
+    <br>
+    <br>
+    <div id="motorencoderrecord">
+        <h1>motor encoder record.vi</h1>
+        <p>
+            this vi is used to record encoder distance of a singular motor
+        </p>
+        <h2>Parameters</h2>
+        <ul>
+            <li>refnumName: String</li>
+            <li>speed: Numeric</li>
+            <li>motorController: String</li>
+        </ul>
+        <p>refnumName: the refnum name of the motor</p>
+        <p>speed: the % output of the motor</p>
+        <p>motorController: indicates which type of motor controller is being used</p>
+        <br>
+        <br>
+        <h2>Returns</h2>
+        <ul>
+            <li>distance: Numeric</li>
+        </ul>
+        <p>distance: the encoder distance of the motor encoder</p>
+    </div>
+    <div id="motorencoderexecute">
+        <h1>motor encoder execute.vi</h1>
+        <p>
+            this vi is used to move a single motor to a desired distance
+        </p>
+        <h2>Parameters</h2>
+        <ul>
+            <li>speed: Numeric</li>
+            <li>desiredDistance: Numeric</li>
+            <li>refnumName: String</li>
+            <li>motorController: String</li>
+        </ul>
+        <p>speed: the % output of the motor</p>
+        <p>desiredDistance: the desired encoder distance of the motor</p>
+        <p>refnumName: the refnum name of the motor</p>
+        <p>motorController: indicates which type of motor controller is being used</p>
         <br>
         <br>
         <h2>Returns</h2>
